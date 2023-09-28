@@ -1,0 +1,63 @@
+$main_color: #E64F3B;
+$second_color: #000;
+$highlight_color: #9b9b9b;
+$text_color: #333;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$main_font: 'Montserrat', sans-serif;
+$secondary_font: 'Open Sans', sans-serif;
+
+@import './animate';
+@import './fx';
+
+
+body {
+    width: 95vw;
+    max-height: calc(100% - 5vw);
+}
+
+*, html {
+    font-size: 62.5%;
+    font-family: $main_font;
+    color: $text_color;
+    box-sizing: border-box;
+}
+
+@mixin border_style() {
+    border: 1.5px solid #E64F3B;
+    background: none;
+
+}
+
+@mixin typo($ff, $fs, $lh, $fw: 400, $td: none, $cl: $text_color) { 
+//(font-family, font-size, line-height, font-weight, text-decoration, color)
+    font-family: $ff;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    text-decoration: $td;
+    color: $cl;
+}
+
+
+h1 {@include typo($main_font, 6rem, 120%, 800)}
+h2 {@include typo($main_font, 4rem, 120%, 600)}
+h3 {@include typo($main_font, 3rem, 120%, 600)}
+h4 {@include typo($main_font, 2.5rem, 120%, 600)}
+h5 {@include typo($main_font, 2rem, 120%)}
+h6 {@include typo($main_font, 1.6rem, 120%)}
+
+p, a, label, input, textarea {
+    @include typo($main_font, 1.4rem, 120%, 300); 
+    span { 
+        &.bol { @include typo(inherit, inherit, inherit, 600)}
+        &.bolr { @include typo(inherit, inherit, inherit, 800)}
+        &.ita { @include typo(inherit, inherit, inherit, 400); font-style: italic;}
+        &.undl { @include typo(inherit, inherit, inherit, 400, underline)}
+    }
+}
+
+
+@mixin instruction {h5 {@include typo($main_font, 1.2rem, 120%)}}
+@mixin questions { h5 {@include typo($main_font, 2rem, 120%, 600)}}

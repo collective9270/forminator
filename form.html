@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/master.css">
+    <title>New KYC</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"></div>
+    </header>
+    <div class="main_form-container">
+        <form action="">
+            <fieldset class="" page_title="Identification of legal entity">
+                <legend>Identification of legal entity</legend>
+                <div class="row two_items">
+                    <div class="question __1" question_id="P1Q1A">
+                        <label class="question_label" for="company">Company Name</label>
+                        <input type="text" id="company_name" name="" placeholder="Company Name">
+                        <div class="error-message">
+                            <p>Please fill in a valid lastname</p>
+                        </div>
+                        <p class="description"><span></span> </p>
+                    </div>
+                    <div class="question __1" question_id="P1Q1B">
+                        <label class="question_label" for="legalform">Legal Form</label>
+                        <input type="text" id="legalform" name="" placeholder="Legal Form">
+                        <div class="error-message">
+                            <p>Please fill in a valid firstname</p>
+                        </div>
+                        <p class="description"><span></span> </p>
+                    </div>
+                </div>
+                <div class="row three_items">
+                    <div class="question __1" question_id="P1Q3">
+                        <label class="question_label" for="date_of_incorporation">Date of incorporation</label>
+                        <input type="text" id="date_of_incorporation" name="date_of_incorporation"
+                            placeholder="Date of incorporation">
+                        <div class="error-message">
+                            <p>Please provide a valid date of incorporation</p>
+                        </div>
+                        <p class="description"><span></span></p>
+                    </div>
+                    <div class="question __1" question_id="P1Q4">
+                        <label class="question_label" for="enterprise_number">Enterprise number</label>
+                        <input type="text" id="enterprise_number" name="enterprise_number"
+                            placeholder="Enterprise number">
+                        <div class="error-message">
+                            <p>Please fill in a valid enterprise number</p>
+                        </div>
+                        <p class="description"><span></span></p>
+                    </div>
+                    <div class="question __1" question_id="P1Q4">
+                        <label class="question_label" for="type_of_legal_entity">Type of legal entity</label>
+                        <input type="text" id="type_of_legal_entity" name="type_of_legal_entity"
+                            placeholder="Type of legal entity">
+                        <div class="error-message">
+                            <p>Please fill in a valid Type of legal entity</p>
+                        </div>
+                        <p class="description"><span></span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="question __2" question_id="P1Q2A">
+                        <label class="question_label" for="addressline1">Address</label>
+                        <ul>
+                            <li class="w_1">
+                                <label for="Address Line 1">Address Line 1</label>
+                                <input type="text" id="address_line_1" name="" placeholder="Address Line 1">
+                            </li>
+                            <li class="w_1">
+                                <label for="Address Line 2">Address Line 2</label>
+                                <input type="text" id="address_line_2" name="" placeholder="Address Line 2">
+                            </li>
+                            <li class="w3">
+                                <label for="City">City</label>
+                                <input type="text" id="city" name="" placeholder="City">
+                            </li>
+                            <li class="w3">
+                                <label for="Postal Code">Postal Code</label>
+                                <input type="text" id="postal_code" name="" placeholder="Postal Code">
+                            </li>
+                            <li class="w3">
+                                <label for="Country">Country</label>
+                                <input type="text" id="country" name="" placeholder="Country">
+                            </li>                            
+                        </ul>
+                        <p class="description"><span></span></p>
+                    </div>
+                </div>
+                <div class="row two_items">
+                    <div class="question __1" question_id="P1Q9">
+                        <label class="question_label" for="appointment_date">Date of appointment</label>
+                        <input type="text" id="appointment_date" name="appointment_date"
+                            placeholder="Date of appointment">
+                        <div class="error-message">
+                            <p>Please provide a valid date of appointment</p>
+                        </div>
+                        <p class="description"><span></span></p>
+                    </div>
+                    <div class="question __1" question_id="P1Q10">
+                        <label class="question_label" for="appointment_duration">Duration of appointment (definite or
+                            indefinite period)</label>
+                        <input type="text" id="appointment_duration" name="appointment_duration"
+                            placeholder="Appointment duration">
+                        <div class="error-message">
+                            <p>Please provide appointment duration information</p>
+                        </div>
+                        <p class="description"><span></span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="question __3" question_id="P1Q5">
+                        <label class="question_label" for="participations">Participation(s) (if any)</label>
+                        <textarea id="participations" name="participations" placeholder="Participation(s)"></textarea>
+                        <div class="error-message">
+                            <p>Please provide information about participations</p>
+                        </div>
+                        <p class="description"><span></span></p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="question __3" question_id="P1Q6">
+                        <label class="question_label" for="other_legal_entities">Are there any other parties / legal
+                            entities involved in requested services?</label>
+                        <textarea id="other_legal_entities" name="other_legal_entities" placeholder="Yes/No"></textarea>
+                        <div class="error-message">
+                            <p>Please provide a valid response</p>
+                        </div>
+                        <p class="description"><span></span></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="question __3" question_id="P1Q7">
+                        <label class="question_label" for="corporate_activities">Description of (corporate) activities
+                            and sector in which legal entity operates</label>
+                        <textarea id="corporate_activities" name="corporate_activities"
+                            placeholder="Description of activities"></textarea>
+                        <div class="error-message">
+                            <p>Please provide a description of activities</p>
+                        </div>
+                        <p class="description"><span></span></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="question __4" question_id="P1Q8">
+                        <label class="question_label" for="directors_list">List of all current (managing) directors</label>
+                        <ul>
+                            <li class="w_1">
+                                <label for="authorized_representative">Authorized Representative</label>
+                                <input type="text" id="authorized_representative" name="" placeholder="Authorized Representative">
+                            </li>
+                            <li class="w_1">
+                                <label for="fullname_representative">Full name</label>
+                                <input type="text" id="fullname_representative" name="" placeholder="Fullname">
+                            </li>                
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="question __3" question_id="P1Q11">
+                        <label class="question_label" for="appointment_duration">Representation of the legal
+                            entity:</label>
+                        <textarea id="corporate_activities" name="corporate_activities"
+                            placeholder="- Directors: ...&#10;- Managing Directors: ...&#10;- Special Proxies: ...&#10;- Authorized Signatories: ..."></textarea>
+                        <div class="error-message">
+                            <p>Please provide appointment duration information</p>
+                        </div>
+                        <p class="description"><span></span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="question __5" question_id="P1Q12">
+                        <label class="question_label" for="addressline1">Supporting documentation</label>
+                        <ul>
+                            <li class="w_2">
+                                <label for="article_of_association">(Most recent coordinated) articles of association of the legal entity*</label>
+                                <input type="file" class="parent" id="article_of_association" name="" placeholder="Upload">
+                            </li>
+                            <li class="w_2">
+                                <label for="cbe_extract">CBE-extract (or extract of a foreign trade register)*</label>
+                                <input type="file" class="parent" id="cbe_extract" name="" placeholder="Upload">
+                            </li>         
+                            <li class="w_2">
+                                <label for="copy_of_passport">Copy of passport / ID card of the legal representative(s)</label>
+                                <input type="file" class="parent" id="copy_of_passport" name="" placeholder="Upload">
+                            </li>
+                            <li class="w_2">
+                                <label for="chart_of_corporate_structure">Chart of the corporate structure of the UBO's</label>
+                                <input type="file" class="parent" id="chart_of_corporate_structure" name="" placeholder="Upload">
+                            </li>         
+                            <li class="w_1">
+                                <label for="corporate_structure_of_UBO">Chart of the corporate structure of the UBO's</label>
+                                <input type="file" class="parent" id="corporate_structure_of_UBO" name="" placeholder="Upload">
+                            </li>         
+                        </ul>
+                        <p class="description"><span></span></p>
+                    </div>
+                </div>
+                <legend class="subTitle">Complete the below questions</legend>
+                <div class="row">
+                    <div class="question __6" question_id="P1Q13">
+                      <label for="P2Q1">Please check the box if you can confirm that the origin of the legal entity's funds and assets are legitimate</label>
+                      <input type="checkbox" name="P2Q1" id="P2Q1">
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="question __6" question_id="P1Q13">
+                      <label for="P2Q2">Please check the box if you can confirm that the (origin of the) legal entity's funds and/or assets are not connected to money laundering and/or terrorist financing</label>
+                      <input type="checkbox" name="P2Q2" id="P2Q2">
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="question __6" question_id="P1Q13">
+                      <label for="P2Q3">Please check the box if you can confirm that the legal entity does not hold any (bank-, savings- or security) account with a financial institution who is not subject to AML-regulation (or any similar regulation)</label>
+                      <input type="checkbox" name="P2Q3" id="P2Q3">
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="question __6" question_id="P1Q13">
+                      <label for="P2Q4">Please check the box if you can confirm that the legal entity is currently not subject to (criminal) proceedings for tax fraud</label>
+                      <input type="checkbox" name="P2Q4" id="P2Q4">
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="question __6" question_id="P1Q13">
+                      <label for="P2Q5">Please check the box if you can confirm that the legal entity was not convicted for tax fraud in the past</label>
+                      <input type="checkbox" name="P2Q5" id="P2Q5">
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="question __6" question_id="P2Q6">
+                      <label for="P2Q6">Please check the box if you can confirm that the legal entity or any of the other parties/entities involved in requested services is not linked to/does not have any legal structures in the following countries: North-Korea, Iran, Afghanistan, Barbados, Burkina Faso, Cambodia, Cayman Islands, Democratic Republic of Congo, Gibraltar, Haiti, Jamaica, Jordan, Mali, Morocco, Mozambique, Panama, Philippines, Senegal, South Sudan, Syria, Tanzania, Turkey, Uganda, and United Arab Emirates.</label>
+                      <input type="checkbox" name="P2Q6" id="P2Q6">
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="question __6" question_id="P2Q7">
+                      <label for="P2Q7">Please check the box if you or the identified natural person under UBO Category 1, UBO Category 2, and/or UBO Category 3, does not qualify as a (family member or a close associate to) 'Politically Exposed Person' (definition set forth in 'Tab 1. Info')</label>
+                      <input type="checkbox" name="P2Q7" id="P2Q7">
+                    </div>
+                  </div>
+                  
+            </fieldset>
+            <fieldset class="" page_title="Definition PEP">
+                <legend>Definition PEP</legend>
+                <div class="row">
+                    <div class="question __7" question_id="P2Q1">
+                      <label for="P2Q7" class="mpc_title"><span class="undl">First Category:</span> a natural person who is:</label>
+                      <ul>
+                        <li class="w_1">
+                          <label for="P2Q1MPC1">
+                            Heads of state, heads of government, ministers and deputy or assistant ministers;
+                          </label>
+                          <input type="checkbox" name="" id="P2Q1MPC1">
+                        </li>
+                        
+                        <li class="w_1">
+                          <label for="P2Q1MPC2">
+                            Members of parliament or of similar legislative bodies;
+                          </label>
+                          <input type="checkbox" name="" id="P2Q1MPC2">
+                        </li>
+                        
+                        <li class="w_1">
+                          <label for="P2Q1MPC3">
+                            Members of the governing bodies of political parties;
+                          </label>
+                          <input type="checkbox" name="" id="P2Q1MPC3">
+                        </li>
+                        
+                        <li class="w_1">
+                          <label for="P2Q1MPC4">
+                            Members of supreme courts, of constitutional courts or of other high-level judicial bodies, including administrative judicial bodies, the decisions of which are not subject to further appeal, except in exceptional circumstances;
+                          </label>
+                          <input type="checkbox" name="" id="P2Q1MPC4">
+                        </li>
+                        
+                        <li class="w_1">
+                          <label for="P2Q1MPC5">
+                            Members of courts of auditors or of the boards of central banks;
+                          </label>
+                          <input type="checkbox" name="" id="P2Q1MPC5">
+                        </li>
+                        
+                        <li class="w_1">
+                          <label for="P2Q1MPC6">
+                            Ambassadors, consuls, chargés d’affaires and high-ranking officers in the armed forces;
+                          </label>
+                          <input type="checkbox" name="" id="P2Q1MPC6">
+                        </li>
+                        
+                        <li class="w_1">
+                          <label for="P2Q1MPC7">
+                            Members of the administrative, management or supervisory bodies of State-owned enterprises;
+                          </label>
+                          <input type="checkbox" name="" id="P2Q1MPC7">
+                        </li>
+                        
+                        <li class="w_1">
+                          <label for="P2Q1MPC8">
+                            Directors, deputy directors and members of the board or persons in an equivalent function of an international organisation.
+                          </label>
+                          <input type="checkbox" name="" id="P2Q1MPC8">
+                        </li>
+                      </ul>
+                      
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="question __7" question_id="P2Q2">
+                      <label for="P2Q7" class="mpc_title"><span class="undl">Second Category:</span> a natural person who is:</label>
+                      <ul>
+                            <li class="w_1">
+                            <label for="P2Q2MPC1">The spouse or a person considered to be equivalent to a spouse of a PEP</label>
+                            <input type="checkbox" name="" id="P2Q2MPC1">
+                            </li>
+                            
+                            <li class="w_1">
+                            <label for="P2Q2MPC2">
+                                The children and their spouses, or persons considered to be equivalent to a spouse of a PEP
+                            </label>
+                            <input type="checkbox" name="" id="P2Q2MPC2">
+                            </li>
+                            
+                            <li class="w_1">
+                            <label for="P2Q2MPC3">
+                                The parents of a PEP
+                            </label>
+                            <input type="checkbox" name="" id="P2Q2MPC3">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="question __7" question_id="P2Q3">
+                      <label for="P2Q7" class="mpc_title"><span class="undl">Third Category: </span> a natural person who</label>
+                      <ul>
+                            <li class="w_1">
+                            <label for="P2Q3MPC1">Is known to have (i) joint beneficial ownership of (a) corporate entities, (b) fiducies or trusts, (c) (international) non-profit organisations and foundations, or (d) legal arrangements similar to fiducies or trusts; or who are known to have (ii) any other close business relations with a PEP</label>
+                            <input type="checkbox" name="" id="P2Q3MPC1">
+                            </li>
+                            
+                            <li class="w_1">
+                            <label for="P2Q3MPC2">Has sole beneficial ownership of (a) corporate entities, (b) fiducies or trusts, (c) (international) non-profit organisations and foundations, or (d) legal arrangements similar to fiducies or trusts, which are known to have been set up for the (de facto )benefit of a PEP.</label>
+                            <input type="checkbox" name="" id="P2Q3MPC2">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Ultimate Beneficial Owners</legend>
+                <div class="row ubo">
+                    <label for="P3Q1" class="">Please provide us with the following information of the natural person(s) holding (in)directly more than 25% of the share capital of the legal entity (if any) (the "UBO Category 1"):</label>
+                    <div class="two_ques">
+                        <div class="question __1" question_id="P3Q1_01A">
+                            <label class="question_label" for="lastname">Lastname</label>
+                            <input type="text" id="lastname" name="" placeholder="Last Name">
+                            <div class="error-message">
+                                <p>Please fill in a valid lastname</p>
+                            </div>
+                            <p class="description"><span></span> </p>
+                        </div>
+                        <div class="question __1" question_id="P3Q1_01B">
+                            <label class="question_label" for="firstname">First Name</label>
+                            <input type="text" id="firstname" name="" placeholder="First Name">
+                            <div class="error-message">
+                                <p>Please fill in a valid firstname</p>
+                            </div>
+                            <p class="description"><span></span> </p>
+                        </div>
+                    </div>
+                    <div class="three_ques">
+                        <div class="question __1" question_id="P3Q1_02A">
+                            <label class="question_label" for="date_of_birth">Date of Birth</label>
+                            <input type="date" id="date_of_birth" name="" placeholder="Date of Birth">
+                            <div class="error-message">
+                                <p>Please fill in a valid birth date.</p>
+                            </div>
+                            <p class="description"><span></span> </p>
+                        </div>
+                        <div class="question __1" question_id="P3Q1_02B">
+                            <label class="question_label" for="place_of_birth">Place of Birth</label>
+                            <input type="text" id="place_of_birth" name="" placeholder="Place of Birth">
+                            <div class="error-message">
+                                <p>Please fill in a valid place of birth</p>
+                            </div>
+                            <p class="description"><span></span> </p>
+                        </div>
+                        <div class="question __1" question_id="P3Q1_02C">
+                            <label class="question_label" for="national_identification_number">National Identification Number</label>
+                            <input type="text" id="national_identification_number" name="" placeholder="National Identification Number">
+                            <div class="error-message">
+                                <p>Please fill in a valid place of birth</p>
+                            </div>
+                            <p class="description"><span></span> </p>
+                        </div>
+                    </div>
+                    <div class="question __2" question_id="P3Q1_03">
+                        <div class="sub_row">
+                            <label class="question_label" for="addressline1">Address</label>
+                            <ul>
+                                <li class="w_1">
+                                    <label for="Address Line 1">Address Line 1</label>
+                                    <input type="text" id="address_line_1" name="" placeholder="Address Line 1">
+                                </li>
+                                <li class="w_1">
+                                    <label for="Address Line 2">Address Line 2</label>
+                                    <input type="text" id="address_line_2" name="" placeholder="Address Line 2">
+                                </li>
+                                <li class="w3">
+                                    <label for="City">City</label>
+                                    <input type="text" id="city" name="" placeholder="City">
+                                </li>
+                                <li class="w3">
+                                    <label for="Postal Code">Postal Code</label>
+                                    <input type="text" id="postal_code" name="" placeholder="Postal Code">
+                                </li>
+                                <li class="w3">
+                                    <label for="Country">Country</label>
+                                    <input type="text" id="country" name="" placeholder="Country">
+                                </li>                            
+                            </ul>
+                        </div>
+                        <p class="description"><span></span></p>
+                    </div>
+                    <div class="question __8" question_id="P1Q12">
+                        <ul>
+                            <li class="w_2">
+                                <label for="front_id">Copy of front passport / ID Card</label>
+                                <input type="file" class="parent" id="front_id" name="" placeholder="Front of passport">
+                            </li>
+                            <li class="w_2">
+                                <label for="back_id">Copy of back passport / ID Card</label>
+                                <input type="file" class="parent" id="back_id" name="" placeholder="Back of passport">
+                            </li>         
+                            <li class="w_2">
+                                <label for="copy_of_passport">Proof of Address</label>
+                                <input type="file" class="parent" id="copy_of_passport" name="" placeholder="Proof Of Address">
+                            </li>         
+                        </ul>
+                        <p class="description"><span></span></p>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="button_set">
+                <button action="prev">Prev</button>
+                <button action="next">Next</button>
+            </div>
+        </form>
+    </div>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>

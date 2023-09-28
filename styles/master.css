@@ -1,0 +1,992 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  position: relative;
+  text-rendering: optimizeSpeed;
+  width: 100%;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+body .main_form-container#form form fieldset legend,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+:focus {
+  outline: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+
+input,
+input:required {
+  box-shadow: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover {
+  -webkit-box-shadow: inset 0 0 0 30px #fff;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=search] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  max-width: 100%;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+a:active,
+a:hover {
+  outline: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+img,
+picture {
+  display: inline-block;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+[disabled] {
+  pointer-events: none;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+button {
+  background: transparent;
+  border: 0;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-indent: 0;
+}
+
+hr {
+  background: #000;
+  border: 0;
+  box-sizing: content-box;
+  height: 1px;
+  line-height: 0;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  page-break-after: always;
+  width: 100%;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 100%;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+}
+
+small,
+sub,
+sup {
+  font-size: 75%;
+}
+
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -5px;
+}
+
+sup {
+  top: -5px;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+  -webkit-appearance: button;
+}
+
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  outline: 0;
+  padding: 0;
+}
+
+legend {
+  border: 0;
+  color: inherit;
+  display: block;
+  max-width: 100%;
+  white-space: normal;
+  width: 100%;
+}
+
+fieldset {
+  min-width: 0;
+}
+
+body:not(:-moz-handler-blocked) fieldset {
+  display: block;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+@keyframes hover-animation {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 0 -5px; /* Move 5 pixels up */
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+body {
+  width: 95vw;
+  max-height: calc(100% - 5vw);
+}
+
+*, html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 120%;
+  text-decoration: none;
+  color: #333;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 120%;
+  text-decoration: none;
+  color: #333;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 120%;
+  text-decoration: none;
+  color: #333;
+}
+
+h4, body .main_form-container#form form fieldset legend {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 120%;
+  text-decoration: none;
+  color: #333;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 120%;
+  text-decoration: none;
+  color: #333;
+}
+
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 120%;
+  text-decoration: none;
+  color: #333;
+}
+
+p, a, label, input, textarea {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 120%;
+  text-decoration: none;
+  color: #333;
+}
+p span.bol, a span.bol, label span.bol, input span.bol, textarea span.bol {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  line-height: inherit;
+  text-decoration: none;
+  color: #333;
+}
+p span.bolr, a span.bolr, label span.bolr, input span.bolr, textarea span.bolr {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 800;
+  line-height: inherit;
+  text-decoration: none;
+  color: #333;
+}
+p span.ita, a span.ita, label span.ita, input span.ita, textarea span.ita {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 400;
+  line-height: inherit;
+  text-decoration: none;
+  color: #333;
+  font-style: italic;
+}
+p span.undl, a span.undl, label span.undl, input span.undl, textarea span.undl {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 400;
+  line-height: inherit;
+  text-decoration: underline;
+  color: #333;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  margin: 0;
+  padding: 0;
+}
+body .main_form-container {
+  background: #FFFFFF;
+  width: 1000px;
+  margin: 0 auto;
+  max-height: 80vh;
+  min-height: 80vh;
+  overflow: scroll;
+}
+body .main_form-container.hidden {
+  display: none !important;
+}
+body .main_form-container#form form {
+  padding: 5rem 7.5rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+body .main_form-container#form form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+body .main_form-container#form form fieldset legend {
+  margin-bottom: 2rem;
+  font-weight: 800;
+}
+body .main_form-container#form form fieldset .row {
+  display: flex;
+  gap: 1.2rem;
+}
+body .main_form-container#form form fieldset .row.two_col .question {
+  width: 50%;
+}
+body .main_form-container#form form fieldset .row.three_col .question {
+  width: 33%;
+}
+body .main_form-container#form form fieldset .row:has(.question.submit) {
+  flex-direction: column !important;
+}
+body .main_form-container#form form fieldset .row:has(.question.submit) input, body .main_form-container#form form fieldset .row:has(.question.submit) .error-message {
+  width: 100%;
+}
+body .main_form-container#form form fieldset .row:has(.question.submit) .submit-button {
+  display: inline-block;
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 2rem;
+  padding: 2rem 4rem;
+  background: #E64F3B;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 120%;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+body .main_form-container#form form fieldset .row:has(.question.submit) .submit-button.hidden {
+  display: none;
+}
+body .main_form-container#form form fieldset .row:has(.question.submit) .submit-button:disabled, body .main_form-container#form form fieldset .row:has(.question.submit) .submit-buttonbutton[disabled] {
+  cursor: not-allowed;
+  background-color: #cccccc;
+  color: #888888;
+}
+body .main_form-container#form form fieldset .row .question {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+body .main_form-container#form form fieldset .row .question .controlcontainer {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+}
+body .main_form-container#form form fieldset .row .question .controlcontainer .control_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1.5px solid #E64F3B;
+  background: none;
+  font-size: 2rem;
+  aspect-ratio: 1;
+  font-weight: 600;
+  cursor: pointer;
+}
+body .main_form-container#form form fieldset .row .question .controlcontainer .control_button:disabled {
+  cursor: not-allowed;
+  background-color: #cccccc;
+  color: #888888;
+  border: none;
+}
+body .main_form-container#form form fieldset .row .question .controlcontainer .control_button:disabled:hover {
+  background-color: #cccccc;
+  color: #888888;
+  border: none;
+}
+body .main_form-container#form form fieldset .row .question .controlcontainer .control_button:hover {
+  background: #E64F3B;
+}
+body .main_form-container#form form fieldset .row .question .controlcontainer .control_button:hover span {
+  color: white;
+}
+body .main_form-container#form form fieldset .row .question.multifield {
+  margin-top: 1.2rem;
+  gap: 1.2rem;
+}
+body .main_form-container#form form fieldset .row .question.multifield label.multifield_title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+body .main_form-container#form form fieldset .row .question.multifield select {
+  width: 100%;
+  padding-right: 2rem;
+}
+body .main_form-container#form form fieldset .row .question.field, body .main_form-container#form form fieldset .row .question .field {
+  flex-grow: 1;
+}
+body .main_form-container#form form fieldset .row .question.field label, body .main_form-container#form form fieldset .row .question .field label {
+  display: none;
+}
+body .main_form-container#form form fieldset .row .question.checkbox {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.6rem;
+}
+body .main_form-container#form form fieldset .row .question.checkbox label {
+  max-width: 95%;
+  width: 95%;
+}
+body .main_form-container#form form fieldset .row .question.checkbox input[type=checkbox] {
+  margin-right: 1.2rem;
+}
+body .main_form-container#form form fieldset .row .question.area label {
+  margin: 1.2rem 0;
+  font-size: 1.2rem;
+}
+body .main_form-container#form form fieldset .row .question.mpc .question_label {
+  font-weight: 600;
+  margin: 1.2rem 0;
+}
+body .main_form-container#form form fieldset .row .question.mpc .question_label:first-of-type {
+  margin: 0;
+  margin-bottom: 1.2rem;
+}
+body .main_form-container#form form fieldset .row .question.mpc ul {
+  border-bottom: 1px solid black;
+}
+body .main_form-container#form form fieldset .row .question.mpc ul li {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  align-items: center;
+}
+body .main_form-container#form form fieldset .row .question.mpc ul li label {
+  max-width: 95%;
+  width: 95%;
+}
+body .main_form-container#form form fieldset .row .question.mpc ul li input[type=checkbox] {
+  margin-right: 1.2rem;
+}
+body .main_form-container#form form fieldset .row .question .error-message, body .main_form-container#form form fieldset .row .question .error-message {
+  display: none;
+  margin-top: 0.4rem;
+  font-style: italic;
+  font-weight: 300;
+  color: #E64F3B;
+  font-size: 1rem;
+}
+body .main_form-container#form form fieldset .row .question .error-message.visible, body .main_form-container#form form fieldset .row .question .error-message.visible {
+  display: block;
+}
+body .main_form-container#form form fieldset .row .question .error-message span, body .main_form-container#form form fieldset .row .question .error-message span {
+  color: inherit;
+}
+body .main_form-container#form form fieldset .row .question input, body .main_form-container#form form fieldset .row .question select {
+  height: 4rem;
+  background: none;
+  border: none;
+  border: 1.5px solid #E64F3B;
+  background: none;
+  text-indent: 2rem;
+  font-size: 1.2rem;
+}
+body .main_form-container#form form fieldset .row .question input[type=checkbox], body .main_form-container#form form fieldset .row .question select[type=checkbox] {
+  /* Remove most all native input styles */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  /* For iOS < 15 */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  color: #9b9b9b;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 100px;
+  padding: 0.1rem;
+  border: 2px solid #9b9b9b;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+body .main_form-container#form form fieldset .row .question input[type=checkbox]::before, body .main_form-container#form form fieldset .row .question select[type=checkbox]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  -webkit-clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+          clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #9b9b9b;
+  /* Windows High Contrast Mode */
+  background-color: #9b9b9b;
+}
+body .main_form-container#form form fieldset .row .question input[type=checkbox]:checked::before, body .main_form-container#form form fieldset .row .question select[type=checkbox]:checked::before {
+  transform: scale(1);
+  background-color: #E64F3B;
+}
+body .main_form-container#form form fieldset .row .question input[type=checkbox]:focus, body .main_form-container#form form fieldset .row .question select[type=checkbox]:focus {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+body .main_form-container#form form fieldset .row .question input[type=date], body .main_form-container#form form fieldset .row .question select[type=date] {
+  text-indent: 1rem;
+  padding-right: 2rem;
+}
+body .main_form-container#form form fieldset .row .question input[type=file], body .main_form-container#form form fieldset .row .question select[type=file] {
+  color: transparent;
+  position: relative;
+  cursor: pointer;
+}
+body .main_form-container#form form fieldset .row .question input[type=file]:hover, body .main_form-container#form form fieldset .row .question select[type=file]:hover {
+  border-style: dashed;
+}
+body .main_form-container#form form fieldset .row .question input[type=file]:before, body .main_form-container#form form fieldset .row .question select[type=file]:before {
+  content: attr(placeholder);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #333;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600.676" height="729.393" viewBox="0 0 600.676 729.393">  <path id="ic_file_upload_24px" d="M434.055,560.771H176.622V303.338H5L305.338,3,605.676,303.338H434.055Zm171.622,85.811H5v85.811H605.676Z" transform="translate(-5 -3)" fill="%23e64f3c"/></svg>');
+  background-repeat: no-repeat;
+  background-position: 2rem center;
+  background-size: 1rem;
+}
+body .main_form-container#form form fieldset .row .question input[type=file]:after, body .main_form-container#form form fieldset .row .question select[type=file]:after {
+  width: 2rem;
+  height: 100%;
+  content: attr(amount_of_files);
+  z-index: 10;
+  font-size: 1.5rem;
+  text-align: right;
+  text-indent: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #E64F3B;
+}
+body .main_form-container#form form fieldset .row .question input[type=file]::file-selector-button, body .main_form-container#form form fieldset .row .question input[type=file]::placeholder, body .main_form-container#form form fieldset .row .question input[type=file] ::-webkit-file-upload-button, body .main_form-container#form form fieldset .row .question select[type=file]::file-selector-button, body .main_form-container#form form fieldset .row .question select[type=file]::placeholder, body .main_form-container#form form fieldset .row .question select[type=file] ::-webkit-file-upload-button {
+  visibility: hidden;
+}
+body .main_form-container#form form fieldset .row .question textarea {
+  height: 8rem;
+  background: none;
+  border: none;
+  border: 1.5px solid #E64F3B;
+  background: none;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+body .main_form-container#form form fieldset .row .question ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1.2rem;
+  justify-content: space-between;
+  border-bottom: 1px solid #9b9b9b;
+  padding-bottom: 1.2rem;
+}
+body .main_form-container#form form fieldset .row .question ul:last-of-type {
+  border-bottom: none;
+}
+body .main_form-container#form form fieldset .row .question ul li {
+  width: 100%;
+}
+body .main_form-container#form form fieldset .row .question ul li input {
+  width: 100%;
+  height: 4rem;
+  background: none;
+  border: none;
+  border: 1.5px solid #E64F3B;
+  background: none;
+  text-indent: 2rem;
+  font-size: 1.2rem;
+}
+body .main_form-container#form form fieldset .row .question ul li._w1 {
+  width: 100%;
+}
+body .main_form-container#form form fieldset .row .question ul li._w2 {
+  width: 49.2%;
+}
+body .main_form-container#form form fieldset .row .question ul li._w3 {
+  width: 32.2%;
+}
+body .main_form-container#form form fieldset.invisible {
+  display: none;
+}
+body .main_form-container#form form .button_set {
+  display: inline-flex;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+body .main_form-container#form form .button_set button {
+  margin-top: 2rem;
+  padding: 2rem 4rem;
+  background: #E64F3B;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 120%;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+body .main_form-container#form form .button_set button.hidden {
+  display: none;
+}
+body .main_form-container#form form .button_set button:disabled, body .main_form-container#form form .button_set buttonbutton[disabled] {
+  cursor: not-allowed;
+  background-color: #cccccc;
+  color: #888888;
+}
+body .main_form-container#loader {
+  padding: 5rem 7.5rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: space-around;
+  justify-content: center;
+  /* Keyframes for the spin animation */
+}
+body .main_form-container#loader h4, body .main_form-container#loader .main_form-container#form form fieldset legend, body .main_form-container#form form fieldset .main_form-container#loader legend {
+  text-align: center;
+}
+body .main_form-container#loader .loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .main_form-container#loader .loader .bar {
+  width: 10px;
+  height: 70px;
+  background: #fff;
+  display: inline-block;
+  transform-origin: bottom center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  /*   box-shadow:5px 10px 20px inset rgba(255,23,25.2); */
+  animation: loader 1.2s linear infinite;
+}
+body .main_form-container#loader .loader .bar1 {
+  animation-delay: 0.1s;
+}
+body .main_form-container#loader .loader .bar2 {
+  animation-delay: 0.2s;
+}
+body .main_form-container#loader .loader .bar3 {
+  animation-delay: 0.3s;
+}
+body .main_form-container#loader .loader .bar4 {
+  animation-delay: 0.4s;
+}
+body .main_form-container#loader .loader .bar5 {
+  animation-delay: 0.5s;
+}
+body .main_form-container#loader .loader .bar6 {
+  animation-delay: 0.6s;
+}
+body .main_form-container#loader .loader .bar7 {
+  animation-delay: 0.7s;
+}
+body .main_form-container#loader .loader .bar8 {
+  animation-delay: 0.8s;
+}
+@keyframes loader {
+  0% {
+    transform: scaleY(0.1);
+    background: #333;
+  }
+  50% {
+    transform: scaleY(1);
+    background: #E64F3B;
+  }
+  100% {
+    transform: scaleY(0.1);
+    background: transparent;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Global Styles */
+.test {
+  border: 1px solid goldenrod;
+}/*# sourceMappingURL=master.css.map */

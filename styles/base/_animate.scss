@@ -1,0 +1,11 @@
+@keyframes hover-animation {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 0 -5px; /* Move 5 pixels up */
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }

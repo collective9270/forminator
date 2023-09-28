@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/master.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"></div>
+    </header>
+    <div class="main_form-container" id="form">
+        <form>
+            <fieldset class="page" page_id="1">
+                <legend>Identification of legal entity</legend>
+                <div class="row two-col">
+                    <div class="question field" type="field" question_id="Q1" required>
+                        <label for="company_name" class="question_label">Company Name</label>
+                        <input type="text" id="company_name" name="company_name" placeholder="Company Name">
+                        <p class="error-message">
+                            <span class="required">Company Name should not be empty</span>
+                        </p>
+                        <p class="description"></p>
+                    </div>
+                    <div class="question field" type="field" question_id="Q2" required>
+                        <label for="legal_form" class="question_label">Legal Form</label>
+                        <input type="text" id="legal_form" name="legal_form" placeholder="Legal Form">
+                        <p class="error-message">
+                            <span class="required">Legal Form should not be empty</span>
+                        </p>
+                        <p class="description"></p>
+                    </div>
+                </div>
+                <div class="row three-col">
+                    <div class="question field" type="field" question_id="Q5" required>
+                        <label for="type_of_legal_entity" class="question_label">Type of legal entity</label>
+                        <input type="text" id="type_of_legal_entity" name="type_of_legal_entity"
+                            placeholder="Type of legal entity">
+                        <p class="error-message">
+                            <span class="required">Type of legal entity should not be empty</span>
+                        </p>
+                        <p class="description"></p>
+                    </div>
+                    <div class="question field" type="field" question_id="Q3" required>
+                        <label for="date_of_incorporation" class="question_label">Date of incorporation</label>
+                        <input type="date" id="date_of_incorporation" name="date_of_incorporation">
+                        <p class="error-message">
+                            <span class="required">Date of incorporation should not be empty</span>
+                        </p>
+                        <p class="description"></p>
+                    </div>
+                    <div class="question field" type="field" question_id="Q4" required>
+                        <label for="legal_form" class="enterprise_number">Enterprise number</label>
+                        <input type="text" id="legal_form" name="legal_form" placeholder="Legal Form">
+                        <p class="error-message">
+                            <span class="required">Enterprise Number should not be empty</span>
+                        </p>
+                        <p class="description"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="question multifield" type="multifield" multifield_name="address" question_id="Q5" required>
+                        <label class="multifield_title" for="office">Office Address</label>
+                        <ul id="office">
+                            <li class="_w1 field" subquestion_id="Q5SUB1">
+                                <label for="address_line_1">Address Line 1</label>
+                                <input type="text" id="address_line_1" name="address_line_1"
+                                    placeholder="Address Line 1">
+                            </li>
+                            <li class="_w1 field" subquestion_id="Q5SUB2">
+                                <label for="address_line_2">Address Line 2</label>
+                                <input type="text" id="address_line_2" name="address_line_2"
+                                    placeholder="Address Line 2">
+                            </li>
+                            <li class="_w3 field" subquestion_id="Q5SUB3">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city" placeholder="City">
+                            </li>
+                            <li class="_w3 field" subquestion_id="Q5SUB4">
+                                <label for="zip">Postal Code</label>
+                                <input type="text" id="zip" name="zip" placeholder="Postal Code">
+                            </li>
+                            <li class="_w3 field" subquestion_id="Q5SUB5">
+                                <label for="country">Country</label>
+                                <input type="text" id="country" name="country" placeholder="Country">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="question multifield" type="multifield" multifield_name="supporting_documentation" question_id="Q6" required>
+                        <label class="multifield_title" for="supporting_documentation">Supporting Documentation</label>
+                        <ul id="supporting_documentation">
+                            <li class="_w2 field" subquestion_id="Q6SUBQ1">
+                                <label for="article_of_association">(Most recent coordinated) articles of association of the legal entity*</label>
+                                <input type="file"  accept="image/*, .pdf, .doc, .docx" multiple amount_of_files="0" id="article_of_association" name="" placeholder="Article of association">
+                            </li>
+                            <li class="_w2 field" subquestion_id="Q6SUBQ2">
+                                <label for="cbe_extract">CBE-extract (or extract of a foreign trade register)*</label>
+                                <input type="file"  accept="image/*, .pdf, .doc, .docx" multiple amount_of_files="0" id="cbe_extract" name="" placeholder="Cbe extract">
+                            </li>
+                            <li class="_w2 field" subquestion_id="Q6SUBQ3">
+                                <label for="copy_of_passport">Copy of passport / ID card of the legal
+                                    representative(s)</label>
+                                <input type="file"  accept="image/*, .pdf, .doc, .docx" multiple amount_of_files="0" id="copy_of_passport" name="" placeholder="Copy of passport">
+                            </li>
+                            <li class="_w2 field" subquestion_id="Q6SUBQ4">
+                                <label for="chart_of_corporate_structure">Chart of the corporate structure of the
+                                    UBO's</label>
+                                <input type="file"  accept="image/*, .pdf, .doc, .docx" multiple amount_of_files="0" id="chart_of_corporate_structure" placeholder="Chart of corporate structure">
+                            </li>
+                            <li class="_w1 field" subquestion_id="Q6SUBQ5">
+                                <label for="ubo_extract">UBO extract of the Client</label>
+                                <input type="file"  accept="image/*, .pdf, .doc, .docx" multiple amount_of_files="0" id="ubo_extract" name="" placeholder="UBO extract">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="question area" type="area" question_id="Q7" required>
+                        <label class="question_label" for="participations">Participation(s) (if any)</label>
+                        <textarea id="participations" name="participations" placeholder="Participation(s)"></textarea>
+                        <div class="error-message">
+                            <p>Please provide information about participations or type No.</p>
+                        </div>
+                        <p class="description"><span></span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="question area" type="area" question_id="Q8" required>
+                        <label class="question_label" for="other_legal_entities">Are there any other parties / legal
+                            entities involved in requested services?</label>
+                        <textarea id="other_legal_entities" name="other_legal_entities" placeholder="Yes/No"></textarea>
+                        <div class="error-message">
+                            <p>Please provide information about participations</p>
+                        </div>
+                        <p class="description"><span></span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="question area" type="area" question_id="Q9" required>
+                        <label class="question_label" for="corporate_activities">(Short) description of (corporate)
+                            activities and sector in which legal entity operates
+                            and sector in which legal entity operates</label>
+                        <textarea id="corporate_activities" name="corporate_activities"
+                            placeholder="Description of activities"></textarea>
+                        <div class="error-message">
+                            <p>Please provide a description of activities</p>
+                        </div>
+                        <p class="description"><span></span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="question area" type="area" question_id="Q10" required>
+                        <label class="question_label" for="appointment_duration">Representation of the legal
+                            entity:</label>
+                        <textarea id="corporate_activities" name="corporate_activities"
+                            placeholder="- Directors: ...&#10;- Managing Directors: ...&#10;- Special Proxies: ...&#10;- Authorized Signatories: ..."></textarea>
+                        <div class="error-message">
+                            <p>Please provide appointment duration information</p>
+                        </div>
+                        <p class="description"><span></span></p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="question multifield" repeatable type="multifield" multifield_name="list_of_directors" question_id="Q11" required>
+                        <label class="multifield_title" for="list_of_directors">List of all current (managing) directors</label>
+                        <div class="error-message">
+                            <p>Please fill in all the fields.</p>
+                        </div>
+                        <ul id="list_of_directors" repeatable_id="0">
+                            <li class="_w2 field" subquestion_id="Q11SUBQ1">
+                                <label for="name">name</label>
+                                <input type="text" id="name" name="name" placeholder="name">
+                            </li>
+                            <li class="_w2 field" subquestion_id="Q11SUBQ2">
+                                <label for="authorized_representative">Authorized Representative</label>
+                                <input type="text" id="authorized_representative" name="" placeholder="Authorized Representative">
+                            </li>
+                            <li class="_w2 field" subquestion_id="Q11SUBQ1">
+                                <label class="question_label" for="appointment_date">Date of appointment</label>
+                                <input type="text" id="appointment_date" name="appointment_date" placeholder="Date of appointment">
+                            </li>
+                            <li class="_w2 field" subquestion_id="Q11SUBQ2">
+                                <label class="question_label" for="appointment_duration">Duration of appointment</label>
+                                <input type="text" id="appointment_duration" name="appointment_duration" placeholder="Duration of appointment">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="page" page_id="2">
+                <legend>Titel Nog Toe Te Voegen</legend>
+                <div class="row">
+                    <div class="question checkbox" type="checkbox" question_id="Q12">
+                        <label for="Q12" class="question_label">
+                            Please check the box if you can confirm that the origin of the legal entity's funds and
+                            assets are legitimate
+                        </label>
+                        <input type="checkbox" id="Q12" name="Q12">
+                        <p class="error-message">
+                            <span class="required">This question should not be skipped.</span>
+                        </p>
+                        <p class="description"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="question checkbox" type="checkbox" question_id="Q13">
+                        <label for="Q13" class="question_label">
+                            Please check the box if you can confirm that the (origin of the) legal entity's funds and/or
+                            assets are not connected to money laundering and/or terrorist financing
+                        </label>
+                        <input type="checkbox" id="Q13" name="Q13">
+                        <p class="error-message">
+                            <span class="required">This question should not be skipped.</span>
+                        </p>
+                        <p class="description"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="question checkbox" type="checkbox" question_id="Q14">
+                        <label for="Q14" class="question_label">
+                            Please check the box if you can confirm that the legal entity does not hold any (bank-,
+                            savings- or security) account with a financial institution who is not subject to
+                            AML-regulation (or any similar regulation)
+                        </label>
+                        <input type="checkbox" id="Q14" name="Q14">
+                        <p class="error-message">
+                            <span class="required">This question should not be skipped.</span>
+                        </p>
+                        <p class="description"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="question checkbox" type="checkbox" question_id="Q15">
+                        <label for="Q15" class="question_label">
+                            Please check the box if you can confirm that the legal entity is currently not subject to
+                            (criminal) proceedings for tax fraud
+                        </label>
+                        <input type="checkbox" id="Q15" name="Q15">
+                        <p class="error-message">
+                            <span class="required">This question should not be skipped.</span>
+                        </p>
+                        <p class="description"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="question checkbox" type="checkbox" question_id="Q16">
+                        <label for="Q16" class="question_label">
+                            Please check the box if you can confirm that the legal entity was not convicted for tax
+                            fraud in the past
+                        </label>
+                        <input type="checkbox" id="Q16" name="Q16">
+                        <p class="error-message">
+                            <span class="required">This question should not be skipped.</span>
+                        </p>
+                        <p class="description"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="question checkbox" type="checkbox" question_id="Q17">
+                        <label for="Q17" class="question_label">
+                            Please check the box if you can confirm that the legal entity or any of the other
+                            parties/entities involved in requested services is not linked to/does not have any legal
+                            structures in the following countries: North-Korea, Iran, Afghanistan, Barbados, Burkina
+                            Faso, Cambodia, Cayman Islands, Democratic Republic of Congo, Gibraltar, Haiti, Jamaica,
+                            Jordan, Mali, Morocco, Mozambique, Panama, Philippines, Senegal, South Sudan, Syria,
+                            Tanzania, Turkey, Uganda and United Arab Emirates.
+                        </label>
+                        <input type="checkbox" id="Q17" name="Q17">
+                        <p class="error-message">
+                            <span class="required">This question should not be skipped.</span>
+                        </p>
+                        <p class="description"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="question checkbox" type="checkbox" question_id="Q18">
+                        <label for="Q18" class="question_label">
+                            Please check the box if you or the identified natural person under UBO Category 1, UBO
+                            Category 2 and/or UBO Category 3, does not qualify as a (family member or a close associate
+                            to) 'Politically Exposed Person' (definition set forth in 'Tab 1. Info')
+                        </label>
+                        <input type="checkbox" id="Q18" name="Q18">
+                        <p class="error-message">
+                            <span class="required">This question should not be skipped.</span>
+                        </p>
+                        <p class="description"></p>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="page" page_id="3">
+                <legend>Definition PEP - Politic Prominent Person</legend>
+                <div class="row">
+                    <div class="question mpc" type="mpc" question_id="Q19">
+                        <label for="Q19" class="question_label">
+                            First Category: a natural person who is:
+                        </label>
+                        <ul>
+                            <li>
+                                <label for="Q19MPC_1">Heads of state, heads of government, ministers and deputy or
+                                    assistant ministers.</label>
+                                <input type="checkbox" id="Q19MPC_1">
+                            </li>
+                            <li>
+                                <label for="Q19MPC_2">Members of parliament or of similar legislative bodies.</label>
+                                <input type="checkbox" id="Q19MPC_2">
+                            </li>
+                            <li>
+                                <label for="Q19MPC_3">Members of the governing bodies of political parties.</label>
+                                <input type="checkbox" id="Q19MPC_3">
+                            </li>
+
+                            <li>
+                                <label for="Q19MPC_4">Members of supreme courts, of constitutional courts or of other
+                                    high-level judicial bodies, including administrative judicial bodies, the decisions
+                                    of which are not subject to further appeal, except in exceptional
+                                    circumstances.</label>
+                                <input type="checkbox" id="Q19MPC_4">
+                            </li>
+                            <li>
+                                <label for="Q19MPC_5">Members of courts of auditors or of the boards of central
+                                    banks.</label>
+                                <input type="checkbox" id="Q19MPC_5">
+                            </li>
+                            <li>
+                                <label for="Q19MPC_6">Ambassadors, consuls, chargés d’affaires and high-ranking
+                                    officers in the armed forces.</label>
+                                <input type="checkbox" id="Q19MPC_6">
+                            </li>
+                            <li>
+                                <label for="Q19MPC_7">Members of the administrative, management, or supervisory bodies
+                                    of State-owned enterprises.</label>
+                                <input type="checkbox" id="Q19MPC_7">
+                            </li>
+                            <li>
+                                <label for="Q19MPC_8">Directors, deputy directors, and members of the board or persons
+                                    in an equivalent function of an international organisation.</label>
+                                <input type="checkbox" id="Q19MPC_8">
+                            </li>
+
+                        </ul>
+                        <p class="error-message">
+                            <span class="required">This question should not be skipped.</span>
+                        </p>
+                        <p class="description"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="question mpc" type="mpc" question_id="Q20">
+                        <label for="Q20" class="question_label">
+                            Second Category: a natural person who is: 
+                        </label>    
+                        <ul>
+                            <li>
+                                <label for="Q20MPC_1">The spouse or a person considered to be equivalent to a spouse of a PEP;</label>
+                                <input type="checkbox" id="Q20MPC_1">
+                            </li>
+                            <li>
+                                <label for="Q20MPC_2">The children and their spouses, or persons considered to be equivalent to a spouse of a PEP</label>
+                                <input type="checkbox" id="Q20MPC_2">
+                            </li>
+                            <li>
+                                <label for="Q20MPC_3">The parents of a PEP.</label>
+                                <input type="checkbox" id="Q20MPC_3">
+                            </li>
+                        </ul>
+                        <p class="error-message">
+                            <span class="required">This question should not be skipped.</span>
+                        </p>
+                        <p class="description"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="question mpc" type="mpc" question_id="Q21">
+                        <label for="Q21" class="question_label">
+                            Third Category: a natural person who:
+                        </label>    
+                        <ul>
+                            <li>
+                                <label for="Q21MPC_1">Is known to have (i) joint beneficial ownership of (a) corporate entities, (b) fiducies or trusts, (c) (international) non-profit organisations and foundations, or (d) legal arrangements similar to fiducies or trusts; or who are known to have (ii) any other close business relations with a PEP</label>
+                                <input type="checkbox" id="Q21MPC_1">
+                            </li>
+                            <li>
+                                <label for="Q21MPC_2">Has sole beneficial ownership of (a) corporate entities, (b) fiducies or trusts, (c) (international) non-profit organisations and foundations, or (d) legal arrangements similar to fiducies or trusts, which are known to have been set up for the (de facto )benefit of a PEP.</label>
+                                <input type="checkbox" id="Q21MPC_2">
+                            </li>
+                        </ul>
+                        <p class="error-message">
+                            <span class="required">This question should not be skipped.</span>
+                        </p>
+                        <p class="description"></p>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="page" page_id="4">
+                <legend>Ultimate Beneficial Owners</legend>
+                <div class="row">
+                    <div class="question multifield" type="multifield" multifield_name="ubo" question_id="Q22" repeatable required>
+                        <label class="multifield_title" for="ubo_information">Please provide us with the following information of the UBO</label>
+                        <div class="description">
+                            <p><span class="undl">Category 1</span>: The natural person(s) holding (in)directly more than 25% of the share capital of the legal entity (if any)</p><br />
+                            <p><span class="undl">Category 2</span>: The natural person(s) who control(s) the legal entity by other means</p> <br/>
+                            <p><span class="undl">Category 3</span>: The natural person(s) who are/is part of the senior managing officials of the legal entity</p> <br/>
+                        </div>
+                        <ul id="ubo_information">
+                            <li class="_w3 field" subquestion_id="Q22SUBQ1">
+                                <label for="ubo_categroy">Ubo Category</label>
+                                <input type="text" id="ubo_category" name="ubo_category" placeholder="ubo category">
+                            <li class="_w3 field" subquestion_id="Q22SUBQ2">
+                                <label for="lastname">Lastname</label>
+                                <input type="text" id="lastname" name="lastname" placeholder="Lastname">
+                            </li>
+                            <li class="_w3 field" subquestion_id="Q22SUBQ3">
+                                <label for="firstname">Firstname</label>
+                                <input type="text" id="firstname" name="firstname" placeholder="Firstname">
+                            </li>
+                            <li class="_w3 field" subquestion_id="Q22SUBQ4">
+                                <label for="date_of_birth">Date of birth</label>
+                                <input type="text" id="date_of_birth" name="date_of_birth" placeholder="Date of birth">
+                            </li>
+                            <li class="_w3 field" subquestion_id="Q22SUBQ5">
+                                <label for="place_of_birth">Place of birth</label>
+                                <input type="text" id="place_of_birth" name="place_of_birth" placeholder="Place of birth">
+                            </li>
+                            <li class="_w3 field" subquestion_id="Q22SUBQ6">
+                                <label for="national_identification_number">Official national identification number</label>
+                                <input type="text" id="national_identification_number" name="national_identification_number" placeholder="Official national identification number">
+                            </li>
+                            <li class="_w1 field" subquestion_id="Q22SUBQ7">
+                                <label for="address_line_1">Address Line 1</label>
+                                <input type="text" id="address_line_1" name="address_line_1"
+                                    placeholder="Address Line 1">
+                            </li>
+                            <li class="_w1 field" subquestion_id="Q22SUBQ8">
+                                <label for="address_line_2">Address Line 2</label>
+                                <input type="text" id="address_line_2" name="address_line_2"
+                                    placeholder="Address Line 2">
+                            </li>
+                            <li class="_w3 field" subquestion_id="Q22SUBQ9">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city" placeholder="City">
+                            </li>
+                            <li class="_w3 field" subquestion_id="Q22SUBQ10">
+                                <label for="zip">Postal Code</label>
+                                <input type="text" id="zip" name="zip" placeholder="Postal Code">
+                            </li>
+                            <li class="_w3 field" subquestion_id="Q22SUBQ11">
+                                <label for="country">Country</label>
+                                <input type="text" id="country" name="country" placeholder="Country">
+                            </li>
+                            <li class="_w3 field" subquestion_id="Q22SUBQ12">
+                                <label for="front_id">Copy of front passport / ID Card</label>
+                                <input type="file"  accept="image/*, .pdf, .doc, .docx" id="front_id" name="" placeholder="Front of passport">
+                            </li>
+                            <li class="_w3 field" subquestion_id="Q22SUBQ13">
+                                <label for="back_id">Copy of back passport / ID Card</label>
+                                <input type="file"  accept="image/*, .pdf, .doc, .docx" id="back_id" name="" placeholder="Back of passport">
+                            </li>         
+                            <li class="_w3 field" subquestion_id="Q22SUBQ14">
+                                <label for="copy_of_passport">Proof of Address</label>
+                                <input type="file"  accept="image/*, .pdf, .doc, .docx" id="copy_of_passport" name="" placeholder="Proof Of Address">
+                            </li>
+                        </ul>
+                       
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="page" page_id="5" submit>
+                <legend>Submit Registration</legend>
+                <div class="row">
+                    <div class="question submit checkbox" type="checkbox" question_id="final">
+                        <label for="Q18" class="question_label">
+                            Undersigned, hereby declares that the information set out above is true and complete and undertakes to report any change in such information without delay to Cambrian BV.
+                        </label>
+                        <input type="checkbox" id="Q18" name="Q18">
+                        <p class="error-message">
+                            <span class="required">You need to check the box before submitting the form</span>
+                        </p>
+                        <p class="description"></p>
+                    </div>
+                    <button action="submit" class="submit-button">Submit</button>
+                </div>
+            </fieldset>
+            <div class="button_set">
+                <button class="navigation" action="prev">Prev</button>
+                <button class="navigation" action="next">Next</button>
+            </div>
+        </form>
+    </div>
+    <div class="main_form-container hidden" id="loader">
+        <h4>Please wait while we handle your submission. <br />Don't close this window.</h4>
+        <div class="loader">
+            <div class="middle">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+                <div class="bar bar4"></div>
+                <div class="bar bar5"></div>
+                <div class="bar bar6"></div>
+                <div class="bar bar7"></div>
+                <div class="bar bar8"></div>
+              </div>
+        </div>
+    </div>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+
+</html>
+
+
+
+
